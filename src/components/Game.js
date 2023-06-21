@@ -124,9 +124,9 @@ const Game = () => {
   }
 
   function restartGame() {
-    setSnake([{ x: 0, y: BOARD_SIZE - 1 }]);
+    setSnake(INITIAL_SNAKE_LENGTH);
     setFood(generateFoodPosition());
-    setDirection("right");
+    setDirection("left");
     setGameOver(false);
   }
 
